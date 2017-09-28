@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ToyService from './components/ToyService';
+import ToyService from './ToyService';
 
 class AddToy extends Component {
     constructor(props) {
@@ -29,10 +29,11 @@ class AddToy extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Add Toy:
-                        <input type="text" value={this.state.toy}
+                        <input type="text" value={this.state.toy} 
                         onChange={this.handleChange}
                         className="form-control" />
-                    </label>    
+                    </label>
+                        <input type = "submit" value="Submit" className="btn btn-primary"/>     
                 </form>
             </div>    
         );
