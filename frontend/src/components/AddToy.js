@@ -32,7 +32,7 @@ class AddToy extends Component {
                         <input type="text" value={this.state.toy} 
                         onChange={this.handleChange}
                         className="form-control" />
-                    </label>
+                    </label><br/>
                         <input type = "submit" value="Submit" className="btn btn-primary"/>     
                 </form>
             </div>    
